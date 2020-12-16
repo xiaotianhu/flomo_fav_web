@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" /> 
+  <title>收藏到Flomo</title>
+</head>
+
+<body>
+    <!-- 保存接口 -->
+    <div class="container" id="api_url_container" style="display:none;">
+      <div class="title"> 接口地址 </div>
+      <input type="text" class="text" id="api_url" placeholder="http://"/>
+      <div id="btns">
+        <span id="save_url">保存</span>
+      </div>
+    </div>
+
+  <div class="container" id="save_page_info">
+    <div class="title" id="page_title">
+     标题
+    </div>
+    <input type="text" class="text" id="last_tag" placeholder="#标签"/>
+    <textarea>
+
+    </textarea>
+    <div id="btns">
+      <span id="save_page">保存</span>
+    </div>
+
+    <div id="msg" style="display:none;">
+      <div id="msg-content">
+        <img src="img/msg.png"></img>
+        <p>msg</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script src="index.js"></script>
+<style type="text/css">
+  html,body{
+    width:400px;
+    height:300px;
+    margin:0;
+    padding:0;
+    border:none;
+    overflow:hidden;
+  }
+  .container{
+    width:100%;
+    height:100%;
+    background-color:rgb(40,40,40);
+    overflow:hidden;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .container textarea{
+    outline:none;
+    border: 1px solid rgb(166, 226, 46);
+    width:90%;
+    height:150px;
+    margin-top:10px;
+    BACKGROUND-COLOR: transparent;
+    color:rgb(166, 226, 46);
+  }
+
+  .title{
+    width:100%;
+    line-height:36px;
+    max-height:32px;
+    overflow-y:hidden;
+    padding:10px 10px;
+    font-size:30px;
+    font-weight:500;
+    color:rgb(166, 226, 46);
+  }
+
+  #tags{
+    width:100%;
+    height:100%;
+    margin-bottom:30px;
+    overflow-y:auto;
+  }
+
+  ul{
+    display:block;
+    margin:0;
+    padding:0;
+  }
+
+  li{
+    border:solid 1px rgb(213,130,30);
+    font-size:14px;
+    display:inline-block;
+    color:rgb(250, 250, 250);
+    margin-left:10px;
+    margin-top:4px;
+    padding:4px;
+    cursor:pointer;
+  }
+  
+  #btns{
+    width:100%;
+    height:30px;
+    position:fixed;
+    bottom:10px;
+    border:none;
+  }
+  #btns span{
+    height:20px;
+    display:block;
+    float:right;
+    border:solid 1px rgb(213,130,30);
+    font-size:14px;
+    color:rgb(250, 250, 250);
+    margin-right:15px;
+    padding:4px 8px;
+    cursor:pointer;
+    z-index:10;
+  }
+  #msg{
+    width:100%;
+    height:100%;
+    background:black;
+    opacity:0.8;
+    color:rgb(250, 250, 250);
+    position:fixed;
+    padding:4px;
+    top:0;
+    left:0;
+  }
+  #msg-content{
+    width:100%;
+    height:18px;
+    line-height:18px;
+    margin-top:30%;
+    margin-left:30%;
+    font-size:18px;
+    font-weight:400;
+    vertical-align:middle;
+  }
+  #msg-content img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+  }
+  #msg-content p{
+    display:inline-block;
+  }
+  .selected{
+    background-color: rgb(213,130,30);
+  }
+  .text{
+    width:90%;
+    height:10%;
+    overflow-y:scroll;
+    BACKGROUND-COLOR: transparent;
+    color:rgb(166, 226, 46);
+    outline:none;
+    border:0;
+    border-bottom:1px solid;
+  }
+</style>
+</html>
