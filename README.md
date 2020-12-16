@@ -1,6 +1,6 @@
-#Chrome Extension  把网页收藏到flomo.app(浮墨)
+# Chrome Extension  把网页收藏到flomo.app(浮墨)
 
-#用法
+# 用法
 
 - 把项目clone到本地.
 - 打开Chrome,输入 chrome://extensions/,打开右上角的 Developer Mode(开发者模式)
